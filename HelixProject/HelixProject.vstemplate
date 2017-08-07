@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Helix Project</Name>
+    <Description>Helix Project</Description>
+    <Icon>HelixProject.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>69f201da-92c5-4e53-b7f2-54b7d2c8d9fd</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>HelixProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Templates.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App_Config\Include\Feature\$safeprojectname$.config">Feature.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

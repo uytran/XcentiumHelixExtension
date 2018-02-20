@@ -58,12 +58,12 @@ namespace Xcentium.HelixExtension
             else if(cbMVC.IsChecked.HasValue && cbMVC.IsChecked.Value)
                 CommandHelper.AddMVCFolders(projectName, moduleName, tbAreaName.Text);
             //serialization
-            if (cbIncludeSerial.IsChecked.HasValue && cbIncludeSerial.IsChecked.Value)
-            {
-                var dir = CommandHelper.GetSolutionFileDirectory();
-                string baseFilePath = String.Concat(dir, "\\src\\", selectedLayer.Name, "\\", moduleName, "\\serialization");
-                SerializationHelper.CreateModuleRenderingFolder(baseFilePath, moduleName, selectedLayer.Name);
-            }
+            //if (cbIncludeSerial.IsChecked.HasValue && cbIncludeSerial.IsChecked.Value)
+            //{
+            //    var dir = CommandHelper.GetSolutionFileDirectory();
+            //    string baseFilePath = String.Concat(dir, "\\src\\", selectedLayer.Name, "\\", moduleName, "\\serialization");
+            //    SerializationHelper.CreateModuleRenderingFolder(baseFilePath, moduleName, selectedLayer.Name);
+            //}
 
             MessageBox.Show("Project has been added", "Helix Advanced Project Add");
             this.Close();

@@ -37,7 +37,7 @@
             <TextBlock Height="30" Width="200" VerticalAlignment="Center">Include Test Project</TextBlock>
             <CheckBox Name="cbIncludeTest" HorizontalAlignment="Center"  Height="30"></CheckBox>
         </StackPanel>
-        <StackPanel Grid.Row="3" Orientation="Horizontal" Height="30">
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Height="30" Visibility="Hidden">
             <TextBlock Height="30" Width="200" VerticalAlignment="Center">Include Unicorn Serialization</TextBlock>
             <CheckBox Name="cbIncludeSerial" HorizontalAlignment="Center"  Height="30"></CheckBox>
         </StackPanel>
